@@ -19,30 +19,58 @@ public class ArrayMethods1
 		
 		
 		
-		public static void bubbleSort(String [] list1)
+		public static void bubbleSort(String[] list1)
 		{
-			
+			for(int x = 0;  x < list1.length; x++)
+			{
+				String a = list1[x];
+				String b = list1[x+1];
+				if()
+				{
+					swapString(list1[x], a, b);
+				}
+			}
 		}
-		
-			
-		public static void Swap(int[]array; int index1; int index2)
-		{
-			int temp = array[index1];
-			array[index1] = array[index2];
-			array[index2] = temp;		
-		
-		
-		
-		
-		
-		
-		
-
-	private void int list1(int A, int b, int c, int d, int e, int f, int g, int h) 
+	}
+	private static void swapString(String x, String a, String b)
 	{
-		// TODO Auto-generated method stub
-		
+	
 	}
 	
+	private static void swapInt(int x, int a, int b)
+	{
+		x = 3;
+		a = 9;
+		b = 5;
+	}
+	
+	private static void swapDouble(double x, double a, double b)
+	{
+		x = 1;
+		a = 7;
+		b = 3;	
+	}
+
+	public static void swapInt(int[] arr, int index1, int index2)
+	{
+		int x = index1;
+		arr[index1] = arr[index2];
+		arr[index2] = x;
+	}
+	
+	public static void swapString(String[] arr, int index1, int index2)
+	{
+		int x = index1;
+		String a = arr[x];
+		arr[index1] = arr[index2];
+		arr[index2] = a;
+	}
+	
+	public static void swapDouble(double[] arr, int index1, int index2)
+	{
+		int x = index1;
+		arr[index1] = arr[index2];
+		arr[index2] = x;
+	}
 	
 }
